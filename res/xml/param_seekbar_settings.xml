@@ -1,0 +1,62 @@
+<!-- ?xml version="1.0" encoding="utf-8"? -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mypref="http://com.creativeongreen.neuralnetwork.preference" >
+
+    <PreferenceCategory android:title="@string/menu_settings" >
+        <com.creativeongreen.neuralnetwork.preference.ParamSeekBarPreference
+            android:defaultValue="2.0"
+            android:key="paramNumHiddenNeurons"
+            android:max="5"
+            android:summary="@string/param_summary_num_hidden_neurons"
+            android:title="@string/param_title_num_hidden_neurons"
+            mypref:maxValue="5"
+            mypref:minValue="0"
+            mypref:sbProgressFactor="1" />
+        <com.creativeongreen.neuralnetwork.preference.ParamSeekBarPreference
+            android:defaultValue="0.3"
+            android:key="paramLearningRate"
+            android:max="1"
+            android:summary="@string/param_summary_learning_rate"
+            android:title="@string/param_title_learning_rate"
+            mypref:maxValue="1"
+            mypref:minValue="0"
+            mypref:sbProgressFactor="100" />
+        <com.creativeongreen.neuralnetwork.preference.ParamSeekBarPreference
+            android:defaultValue="0.9"
+            android:key="paramMomentum"
+            android:max="1"
+            android:summary="@string/param_summary_momentum"
+            android:title="@string/param_title_momentum"
+            mypref:maxValue="1"
+            mypref:minValue="0"
+            mypref:sbProgressFactor="100" />
+        <com.creativeongreen.neuralnetwork.preference.ParamSeekBarPreference
+            android:defaultValue="5.0"
+            android:key="paramGlobalError"
+            android:max="10"
+            android:summary="@string/param_summary_global_error"
+            android:title="@string/param_title_global_error"
+            mypref:maxValue="10"
+            mypref:minValue="1"
+            mypref:sbProgressFactor="1" />
+        <com.creativeongreen.neuralnetwork.preference.ParamSeekBarPreference
+            android:defaultValue="10000.0"
+            android:key="paramMaxEpoch"
+            android:max="100000"
+            android:summary="@string/param_summary_max_epoch"
+            android:title="@string/param_title_max_epoch"
+            mypref:maxValue="100000"
+            mypref:minValue="1000"
+            mypref:sbProgressFactor="1" />
+        <com.creativeongreen.neuralnetwork.preference.ParamSeekBarPreference
+            android:defaultValue="0.2"
+            android:key="paramNoiseDegree"
+            android:max="1"
+            android:summary="@string/param_summary_noise_degree"
+            android:title="@string/param_title_noise_degree"
+            mypref:maxValue="1"
+            mypref:minValue="0"
+            mypref:sbProgressFactor="100" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

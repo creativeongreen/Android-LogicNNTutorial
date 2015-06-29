@@ -1,0 +1,32 @@
+<!-- ?xml version="1.0" encoding="utf-8"? -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/menu_settings" >
+        <ListPreference
+            android:defaultValue="10000"
+            android:entries="@array/entriesMaxEpoch"
+            android:entryValues="@array/entryValuesMaxEpoch"
+            android:key="paramMaxEpoch"
+            android:summary="@string/param_summary_max_epoch"
+            android:title="@string/param_title_max_epoch" >
+        </ListPreference>
+        <ListPreference
+            android:defaultValue="0.3"
+            android:entries="@array/entriesLearningRate"
+            android:entryValues="@array/entryValuesLearningRate"
+            android:key="paramLearningRate"
+            android:max="100"
+            android:summary="@string/param_summary_learning_rate"
+            android:title="@string/param_title_learning_rate" >
+        </ListPreference>
+        <ListPreference
+            android:defaultValue="0.9"
+            android:entries="@array/entriesMomentum"
+            android:entryValues="@array/entryValuesMomentum"
+            android:key="paramMomentum"
+            android:summary="@string/param_summary_momentum"
+            android:title="@string/param_title_momentum" >
+        </ListPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
